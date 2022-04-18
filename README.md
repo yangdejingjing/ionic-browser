@@ -13,25 +13,34 @@ npx cap sync
 
 <docgen-index>
 
-* [`echo(...)`](#echo)
+* [`create(...)`](#create)
+* [Interfaces](#interfaces)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### echo(...)
+### create(...)
 
 ```typescript
-echo(options: { value: string; }) => Promise<{ value: string; }>
+create(options: BrowserOptions) => void
 ```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ value: string; }</code> |
-
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+| Param         | Type                                                      |
+| ------------- | --------------------------------------------------------- |
+| **`options`** | <code><a href="#browseroptions">BrowserOptions</a></code> |
 
 --------------------
+
+
+### Interfaces
+
+
+#### BrowserOptions
+
+| Prop      | Type                | Description |
+| --------- | ------------------- | ----------- |
+| **`url`** | <code>string</code> | 网页地址        |
 
 </docgen-api>

@@ -1,3 +1,8 @@
 export interface BrowserPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  create(options: BrowserOptions): void;
+}
+
+export interface BrowserOptions {
+  /** 网页地址 */
+  url: string
 }

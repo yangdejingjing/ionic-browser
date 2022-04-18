@@ -1,6 +1,7 @@
 package com.dlht.ionic.browser;
 
-import com.getcapacitor.JSObject;
+import android.content.Intent;
+
 import com.getcapacitor.Plugin;
 import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
@@ -9,14 +10,12 @@ import com.getcapacitor.annotation.CapacitorPlugin;
 @CapacitorPlugin(name = "Browser")
 public class BrowserPlugin extends Plugin {
 
-    private Browser implementation = new Browser();
-
     @PluginMethod
-    public void echo(PluginCall call) {
-        String value = call.getString("value");
-
-        JSObject ret = new JSObject();
-        ret.put("value", implementation.echo(value));
-        call.resolve(ret);
+    public void create(PluginCall call){
+        String url = call.getString("url");
+        Intent intent = new Intent(getContext(),BrowserActivity.class);
+        intent.putExtra("url",url);
+        getActivity().startActivity(intent);
+        call.resolve();
     }
 }
