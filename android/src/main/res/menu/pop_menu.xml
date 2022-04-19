@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/options_open"
+        android:title="在默认浏览器打开" />
+    <item
+        android:id="@+id/options_share"
+        android:title="分享到微信" />
+</menu>
