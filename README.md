@@ -34,13 +34,4 @@ create(options: BrowserOptions) => void
 --------------------
 
 
-### Interfaces
-
-
-#### BrowserOptions
-
-| Prop      | Type                | Description |
-| --------- | ------------------- | ----------- |
-| **`url`** | <code>string</code> | 网页地址        |
-
-</docgen-api>
+### 不保证其通用性，目前只实现了Android
